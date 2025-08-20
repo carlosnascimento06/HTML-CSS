@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+        body {
+            background-color: #e8f5e9;
+        }
+        h1 {
+            text-align: center;
+        }
+        input {
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        select {
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        textarea {
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        fieldset {
+            border: 2px solid black;
+            border-radius: 5px
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de Formulários</h1>
+    <h2>Dados Básicos</h2>
+    <form action="cadastroteste.php" method="post" autocomplete="on">
+        <p>
+            <label for="idnome">Nome</label>
+            <input type="text" name="nome" id="idnome" placeholder="Insira seu nome completo" maxlength="50">
+        </p>
+        <p>
+            <label for="idage">Idade</label>
+            <input type="number" name="age" id="idage" min="1" max="120">
+        </p>
+        <fieldset>
+            <legend>Sexo</legend>
+            <p>
+                <input type="radio" name="sexo" id="masc" value="M">
+                <label for="sexo">Masculino</label>
+                <input type="radio" name="sexo" id="fem" value="F">
+                <label for="sexo">Feminino</label>
+            </p>
+        </fieldset>
+    </form>
+    <h2>Usuário e Senha</h2>
+    <form action="cadastroteste.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Login</legend>
+            <p>
+                <label for="idus">Usuário</label>
+                <input type="text" name="us" id="idus" required>
+             </p>
+             <p>
+                <label for="idpass">Senha</label>
+                <input type="password" name="pass" id="idpass" size="6" maxlength="6" required>
+            </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+        <h2>E-mail, Data e Envio de Documentos</h2>
+        <fieldset>
+            <p>
+                <label for="idtnas">Data de Nascimento</label>
+                <input type="date" name="dtnas" id="idtnas">
+            </p>
+            <p>
+                <label for="idmail">E-mail</label>
+                <input type="email" name="email" id="idmail">
+            </p>
+            <p>
+            <label for="idarquivo">Envie seu arquivo</label>
+            <input type="file" name="arquivo" id="idarquivo">
+            </p>
+        </fieldset>
+        <h2>Cor</h2>
+        <fieldset>
+        <p>
+            <label for="idcor">Cor</label>
+            <input type="color" name="cor" id="idcor">
+        </p>
+        </fieldset>
+        <h2>Informações Escolares</h2>
+        <fieldset>
+            <p>
+                <input type="checkbox" name="mat" id="idmat"> <label for="idmat">Matemática</label>
+                <input type="checkbox" name="por" id="idpor"> <label for="idpor">Português</label>
+                <input type="checkbox" name="bio" id="idbio"> <label for="idbio">Biologia</label>
+                <input type="checkbox" name="soc" id="idsoc"> <label for="idsoc">Sociologia</label>
+                <input type="checkbox" name="fil" id="idfil"> <label for="idfil">Filosofia</label>
+                <input type="checkbox" name="his" id="idhis"> <label for="idhis">História</label>
+                <input type="checkbox" name="art" id="idart"> <label for="idart">Arte</label>
+                <input type="checkbox" name="fis" id="idfis"> <label for="idfis">Física</label>
+                <input type="checkbox" name="qui" id="idqui"> <label for="idqui">Química</label>
+                <input type="checkbox" name="edf" id="idedf"> <label for="idedf">Educação Física</label>
+            </p>
+            <p>
+                <label for="idmed">Qual sua média geral?</label>
+                <input type="number" name="med" id="idmed" step="0.1" max="10">
+            </p>
+            <p>
+                <label for="idsat">Satisfação Escolar</label><br>
+                1<input type="range" name="sat" id="idsat" step="10">10
+            </p>
+        </fieldset>
+        <h2>Estado e Profissão</h2>
+        <fieldset>
+            <p>
+                <label for="idest">Estado</label>
+                <select name="est" id="idest">
+                    <optgroup label="Sul">
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="PR">Paraná</option>
+                    </optgroup>
+                    <optgroup label="Sudeste">
+                        <option value="SP" selected>São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="idprof">Profissão</label>
+                <input type="text" name="prof" id="idprof" list="listprof">
+                <datalist id="listprof">
+                    <option value="Administrador">Administrador</option>
+                    <option value="Professor">Professor</option>
+                    <option value="Advogado">Advogado</option>
+                    <option value="Mecânico">Mecânico</option>
+                    <option value="Contador">Contador</option>
+                </datalist>
+            </p>
+        </fieldset>
+        <h2>Caixa de Mensagem</h2>
+            <label for="idmsg">Escreva sua mensagem</label><br>
+            <textarea name="msgm" id="idmsg" cols="35" rows="20"></textarea>
+    </form>
+    
+</body>
+</html>
