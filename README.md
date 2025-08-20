@@ -21,7 +21,7 @@ Um site que reúne diversos exemplos de usos e práticas com HTML e CSS, incluin
 ## 💻 Como visualizar
 1. Clique no projeto desejado dentro deste repositório.  
 2. Abra o arquivo `index.html` no navegador.  
-3. Ou acesse diretamente pelo **GitHub Pages**:  
+3. Ou acesse diretamente pelo **GitHub Pages**: https://carlosnascimento06.github.io/HTML-CSS/  
 
 ## 📌 Objetivo
 Este espaço serve para organizar meus estudos em front-end, registrar minha evolução e compartilhar projetos com a comunidade.  
