@@ -10,8 +10,10 @@ Grandes telas: acima de 1200px
 body {
     background-size: cover;
     background-repeat: no-repeat;
+    width: 99vw;
+    height: 97vh;
 }
-@media screen and (max-width: 600px) and (orientation: portrait) {
+/@media screen and (max-width: 600px) and (orientation: portrait) {
     body {
         background-image: url(portrait.jpg);
     }
