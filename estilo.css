@@ -49,11 +49,11 @@ footer {
         background-position: center;
     }
     section#bio {
-    width: 380px;
-    height: 280px;
+    width: 340px;
+    height: 240px;
     background-color: #ffffffab;
     display: block;
-    margin: 40px auto;
+    margin: 80px auto;
     border: 2px solid var(--cinza);
     border-radius: 20px;
 }
