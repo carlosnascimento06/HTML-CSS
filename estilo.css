@@ -93,4 +93,12 @@ footer {
         background-image: url(imagens/img05.jpg);
         background-position: center;
     }
+    section#bio {
+    width: 1000px;
+    height: 800px;
+    background-color: #ffffffab;
+    display: block;
+    margin: 100px auto;
+    border: 2px solid var(--cinza);
+    border-radius: 20px;
 }
