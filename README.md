@@ -1,4 +1,4 @@
-# 🌐 Portfólio Pessoal - José Carlos Alves do Nascimento
+# 🌐 Portfólio Pessoal - Carlos Nascimento
 
 Este é um site simples e responsivo feito para **demonstração no portfólio pessoal**, utilizando **HTML** e **CSS**.  
 O objetivo é aplicar técnicas de estilização e responsividade em um projeto prático.
@@ -22,5 +22,5 @@ O objetivo é aplicar técnicas de estilização e responsividade em um projeto 
 ---
 
 ## 🚀 Como ver o site:
-Acesse com o link: 
+Acesse com o link: https://carlosnascimento06.github.io/HTML-CSS/
 
